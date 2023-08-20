@@ -1,0 +1,8 @@
+1 Start
+2 Generate a unique key using ftok()
+3 An identifier is generated using shmget by passing key
+4 Attach identifier to create shared memory location
+5 Read string from user
+6 Store the string in shared memory location
+7 Print the contents
+8 Stop

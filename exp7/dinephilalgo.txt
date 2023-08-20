@@ -1,0 +1,23 @@
+Step 1 Start
+Step 2 Read the number of philosophers
+Step 3 Create a mutex lock mutex and n semaphores for each philosopher
+Step 4 Create n threads for phlosopher and pass its number as argument
+Step 5 Join the threads
+Step 6 When philosopher is running 
+Step 6.1 Call take_fork with its number
+Step 6.2 Call put_fork with its number
+Step 7 When take_fork is running
+Step 7.1 Lock the mutex
+Step 7.2 Change the state of philosopher as HUNGRY from THINKING
+Step 7.3 Test whether the state of left ad right philosophers are not EATING, if true
+Step 7.3.1 Change the state of philosopher as EATING and change the state of semaphore of the philosopher       
+Step 7.4 Unlock the mutex
+Step 7.5 Change the state to wait of the semaphore of philosopher
+Step 8 When put_fork is running
+Step 8.1 Lock the mutex
+Step 8.2 Change state of philosopher to THINKING
+Step 8.3 Check whether the left and right philosopher are in HUNGRY state, if true
+Step 8.3.1 Check their left and rigth are not in EATING state and if it is true make them EATING and change their semaphore state to post
+Step 8.4 Unlock mutex
+Step 9 Destroy mutex and semaphores
+Step 10 Stop

@@ -1,0 +1,8 @@
+1 Start
+2 Generate a key using ftok() which is same as the previously generated key
+3 An identifier is generated using shmget by passing key
+4 Attach identifier to the shared memory location which is the same memory location as the previous program
+5 By accessing memory, print the contents
+6 Using shmdt, detach the identifier from location
+7 Using shmctl, destroy identifier
+8 Stop

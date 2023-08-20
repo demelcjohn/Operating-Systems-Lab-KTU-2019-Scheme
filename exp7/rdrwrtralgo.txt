@@ -1,0 +1,24 @@
+Step 1 Start
+Step 2 Create semphore wrt and mutex lock mutex
+Step 3 Initialise semaphore with 1 and count numreader as 0
+Step 4 Create 10 threads for reader and call reader function with its number as its parameter
+Step 5 Create 5 threads for writer and call writer function with its number as parameter
+Step 6 Join the threads
+Step 7 When reader is running
+Step 7.1 Lock using mutex
+Step 7.2 Increment numreader by 1
+Step 7.3 If numreader is 1, if true 
+Step 7.3.1 Call wait using semaphore,  then the writers will wait
+Step 7.4 Unlock mutex
+Step 7.5 Read the value in shared memory
+Step 7.6 Lock
+Step 7.7 Decrement numreader by 1
+Step 7.8 If numreader is 0,
+Step 7.8.1 Change the state wait of writers to post
+Step 7.9 Unlock mutex
+Step 8 When writer is running
+Step 8.1 Put to wait using semaphore
+Step 8.2 Modify the common value of shared memory
+Step 8.3 Change the waiting state
+Step 9 Destroy mutex and semaphore
+Step 10 Stop  

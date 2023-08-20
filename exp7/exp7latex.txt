@@ -1,0 +1,171 @@
+\documentclass[a4paper]{article}
+
+
+
+\setlength{\textwidth}{16cm}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amsfonts}
+\usepackage{graphicx}
+\usepackage{alltt}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{gensymb}
+\usepackage[titletoc]{appendix}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{dashrule}
+\usepackage{subfig}
+\usetikzlibrary{intersections,calc}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{newclude}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{pdfpages}
+\usepackage{numprint}
+\usepackage{multirow}
+\usepackage{arydshln}
+\usepackage{titlesec}
+\usepackage[titletoc]{appendix}
+\usepackage{chngcntr}
+\usepackage{cleveref}
+\newcommand{\aref}[1]{\hyperref[#1]{Appendix~\ref{#1}}}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+\setlength\dashlinedash{0.3pt}
+\setlength\dashlinegap{3pt}
+\pagenumbering{arabic} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}}
+\renewcommand\thesubparagraph{\theparagraph.\arabic{subparagraph}}
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\@addtoreset{subsubsubsection}{section}
+\@addtoreset{subsubsubsection}{subsection}
+\@addtoreset{paragraph}{subsubsubsection}
+\makeatother
+
+\setcounter{secnumdepth}{6}
+\setcounter{tocdepth}{6}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\begin{document}
+\setcounter{page}{87}
+\thispagestyle{empty}
+\noindent
+\textbf{Experiment 7}\hfill \\
+\textbf{Date:27-06-2022}
+\hfill
+\title{Lab report}
+\begin{center}
+\vspace{15mm}
+\textbf{{\Large Implement Dining Philosopher's Problem Using Semaphores 
+}}
+\end{center}
+\vspace{2.5pt}
+
+\section {Aim}
+
+\par To implement dining philosopher's problem and readers-writers problem using semaphores
+\section{Readers-Writers Problem}
+
+\subsection{Algorithm}
+\par 
+\lstinputlisting{inputs/rdrwrtralgo.txt}
+\vspace{1.5pt}
+
+
+\newpage
+
+
+
+\subsection{Program}
+\par 
+\lstinputlisting{inputs/readr_writr.c}
+\vspace{1.5pt}
+
+\subsection{Output}
+\par
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{inputs/rw1.png}
+        \caption{Output}
+    \end{figure}
+\vspace{1.5pt}
+
+\newpage
+\section{Dining Philosopher's Problem}
+
+\subsection{Algorithm}
+\par 
+\lstinputlisting{inputs/dinephilalgo.txt}
+\vspace{1.5pt}
+
+
+
+\subsection{Program}
+\par 
+\lstinputlisting{inputs/dine_phil2.c}
+\vspace{1.5pt}
+
+\subsection{Output}
+\par
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{inputs/dp1.png}
+        \caption{Output}
+    \end{figure}
+\vspace{1.5pt}
+\par
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{inputs/dp2.png}
+        \caption{Output}
+    \end{figure}
+\vspace{1.5pt}
+
+
+
+
+
+
+\section{Result}
+\par 
+Implemented Dining Philosopher's problem and readers-writers problem 
+
+
+\end{document}

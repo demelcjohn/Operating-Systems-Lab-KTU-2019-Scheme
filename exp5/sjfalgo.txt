@@ -1,0 +1,17 @@
+1 Start
+2 Read number of processes n
+3 Read arrival and burst time of all processes in p
+4 Sort processes in arrival time order and copy to p1
+5 Set wait time of process 0 p1[0].wt as 0 and i = 1
+6 Repeat until i <n
+6.1 Set t = arrival time p1[i-1].at + wait time p1[i-1].wt + burst time p1[i-1].bt
+6.2 Traverse to all arrival time less than t
+6.3 Sort all those with burst time
+6.4 Check if p1[i].at<=t, set p1[i].wt = t - p1[i].at
+6.5 Else , set p1[i].wt = 0
+6.6 Increment i by 1
+7 Set all wait time to the same in p from p1
+8 Find turnaround time for each process by p[i].tt = p[i].bt + p[i].wt
+9 Print all details
+10 Find average wait time and turnaround time by taking average of each processes and print
+11 Stop 

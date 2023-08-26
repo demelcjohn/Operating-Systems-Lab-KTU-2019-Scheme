@@ -9,4 +9,15 @@
    letters, atleast a digit and an underscore (\_). If the password doesn’t comply with any of the
    above conditions, then the script should report it as a (Weak Password)<br>
 5. Write a shell script to generate all 3 digit numbers that contain only the digits 0, 1, 2, 3. (number
-   does not start with 0)
+   does not start with 0)<br>
+6. Write a bash script to find the smallest prime number greater than n which is palindromic.<br>
+7. Write a shell script to sort n numbers<br>
+8. Write a shell script to perform linear search<br>
+9. Write a shell program to print the following pattern upto n rows, for a given n.<br>
+   1<br>
+   2 2<br>
+   3 3 3<br>
+   4 4 4 4<br>
+   .<br>
+   .<br>
+   n n n n n ..<br>

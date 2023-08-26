@@ -21,3 +21,7 @@
    .<br>
    .<br>
    n n n n n ..<br>
+10. Write a shell program to print the Diamond pattern using \* upto n rows, for a given n<br>
+11. Write a shell script that accepts one or more file name as arguments and converts them to uppercase, provided they exist in the current directory<br>
+12. Write a shell script which accepts any number of arguments and prints them in the
+    reverse order<br>

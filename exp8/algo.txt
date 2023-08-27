@@ -1,0 +1,25 @@
+Step 1 Start
+Step 2 Read available resources Available( 1 D array), maximum 
+       resources for each process Max( 2 D array), allocated 
+       resources Allocation( 2 D array) and calculate need of 
+       each processes Need( 2 D array) and mark Finish of each 
+       process as False
+Step 3 Check whether if there any request for resources for any 
+       processes, if there any request,
+Step 3.1 Enter process number
+Step 3.2 Enter the resources for that process
+Step 3.3 Add the requested to Allocation of the process if less 
+         than Need
+Step 3.4 Decrement Available by requested if less than Available
+Step 3.5 Make corresponding change from Need
+Step 4 Copy Available to Work
+Step 5 Find an i such that Finish[i] = False and Need(i) <= Work 
+       and if both conditions satisfy,
+Step 5.1 Increment Work by Allocation(i)
+Step 5.2 Search for next i till Work > Need(i)
+Step 5.3 If Finish of processes are True, print sequence in order 
+         and print system is in safe state and go to step 7
+Step 5.4 If Finish of any process is not True after the searching 
+         ends, Go to Step 6
+Step 6 If cant find such an i, print the system is not in safe state
+Step 7 Stop

@@ -1,0 +1,40 @@
+Step 1 Start
+Step 2 Initialize arrays Available(1D), Allocation(2D), 
+       Request(2D) and a Finish array to store status of process
+Step 3 Read data for the arrays Available, 
+       Allocation and Request and set Finish values as False
+Step 4 Copy Available to Work
+Step 5 Check each processes and if all Allocation values 
+       are 0, then set its Finish as True
+Step 6 Repeat until all Finish values are 0 or till number 
+       of finished processes became same for more than one loop
+Step 6.1 Repeat until a process whose Finish value = False 
+         is found and if there is no process go to step 7
+Step 6.2 Check Requested for that process is greater than Work, 
+         if True
+Step 6.2.1 Set its Finish as True
+Step 6.2.2 Increment the number of finished processes
+Step 6.2.3 Increment Work by Allocation of the process
+Step 7 Check all Finish value is True, if yes
+Step 7.1 Print there is no deadlock and print the execution order
+Step 7.2 Else, print the system is in deadlock state
+Step 8 Stop 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

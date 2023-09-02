@@ -1,0 +1,61 @@
+Step 1 Start
+Step 2 Read the number of memory blocks 
+Step 3 Read the sizes of the blocks
+Step 4 Display the menu (First fit, Best fit ,Worst fit and Exit)
+Step 5 Enter the choice from menu
+Step 6 If choice is 1, go to First fit allocation function
+Step 6.1 Enter the size of block m to be allocated
+Step 6.2 Repeat until maximum size - allocated of block >= m and 
+         till all blocks are traversed
+Step 6.2.1 Increment allocated by m
+Step 6.3 Display the allocated list
+Step 6.4 Ask if wanted to continue, if yes go to step step 6.1
+Step 7 If choice is 2, go to Best fit allocation function
+Step 7.1 Enter the size of block m to be allocated and set flag = 0
+Step 7.2 Repeat until all blocks are traversed
+Step 7.2.1 Check if difference between maximum and allocated size of 
+           process greater than m, if true
+Step 7.2.1.1 Set flag = 1 
+Step 7.2.1.2 Set smallval = maximum - allocated of process size and 
+             small = i
+Step 7.2.1.3 Break
+Step 7.3 Check if flag is 0, then print not possible and break
+Step 7.4 Repeat until all blocks are traversed
+Step 7.4.1 Check if maximum - allocation < smallval and it is greater 
+           than m,  if true
+Step 7.4.1.1 Set smallval = maximum - allocated of process size and 
+             small = i
+Step 7.5 Increment allocation of process by m
+Step 7.6 Display the allocated list
+Step 7.7 Ask if wanted to continue, if yes go to step step 7.1
+Step 8 If choice is 3, go to Worst fit allocation function
+Step 8.1 Enter the size of block m to be allocated and set flag = 0
+Step 8.2 Repeat until all blocks are traversed
+Step 8.2.1 Check if difference between maximum and allocated size of 
+        process greater than m, if true
+Step 8.2.1.1 Set flag = 1 
+Step 8.2.1.2 Set bigval = maximum - allocated of process size and 
+             big = i
+Step 8.2.1.3 Break
+Step 8.3 Check if flag is 0, then print not possible and break
+Step 8.4 Repeat until all blocks are traversed
+Step 8.4.1 Check if maximum - allocation > bigval,  if true
+Step 8.4.1.1 Set bigval = maximum - allocated of process size and 
+             big = i
+Step 8.5 Increment allocation of process by m
+Step 8.6 Display the allocated list
+Step 8.7 Ask if wanted to continue, if yes go to step step 8.1
+Step 9 If choice is 4 , Exit
+Step 10 Go to Step 5
+Step 11 Stop
+
+
+
+
+
+
+
+
+
+
+ 

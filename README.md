@@ -1,4 +1,5 @@
 # Operating Systems Lab Programs <br>
+
 1 Familairization of basic Linux commands. <br>
 2 Shell programming. (List of programs given below) <br>
 3 "System calls of Linux operating system <br>
@@ -15,5 +16,3 @@ a) First Fit b) Worst Fit c) Best Fit" <br>
 11 Implementation of Deadlock detection algorithm <br>
 12 "Simulate disk scheduling algorithms. <br>
 a) FCFS b)SCAN c) C-SCAN" <br>
-13 "Simulate file allocation strategies. <br>
-a) Sequential b) Indexed c) Linked file allocation strategies" <br>

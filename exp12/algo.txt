@@ -1,0 +1,67 @@
+Step 1 Start
+Step 2 Input number of requests n and blocks to be 
+       allocated rq
+Step 3 Enter the choice
+Step 4 If choice is 1, call fcfs()
+Step 5 If choice is 2, call scan()
+Step 6 If choice is 3, call cscan()
+Step 7 If choice <= 3, go to step 3
+Step 8 Stop
+
+fsfc()
+
+Step 1 Set totalswing = 0 and i = 0
+Step 2 Repeat until i<n-1
+Step 2.1 Set totalswing = totalswing + |rq[i]-rq[i+1|
+Step 2.2 Increment i by 1
+Step 3 Print rq is same order as execution order
+Step 4 Print totalswing
+Step 5 Return
+
+scan()
+
+Step 1 Set totalswing = 0
+Step 2 Copy rq to sch
+Step 3 Sort sch
+Step 4 Find index of rq[0] in sch and copy to pos
+Step 5 From pos copy all elements to the left in sch to sch1
+Step 6 Add 0 to sch1
+Step 7 Copy remaining elements in sch to sch1
+Step 8 Add 200 to sch1
+Step 9 Repeat until i<n
+Step 9.1 Set totalswing = totalswing + |sch1[i]-sch1[i+1|
+Step 9.2 Increment i by 1
+Step 10 Print sch1 is same order as execution order
+Step 11 Print totalswing
+Step 12 Return
+
+cscan()
+
+Step 1 Set totalswing = 0
+Step 2 Copy rq to sch
+Step 3 Sort sch
+Step 4 Find index of rq[0] in sch and copy to pos
+Step 5 From pos copy all elements to the right in sch to sch1
+Step 6 Add 200 and 0 in sch1
+Step 7 Copy all elements in left side of sch to sch1 in 
+       ascending order
+Step 8 Repeat until i<n+1
+Step 8.1 Check if sch1 !=200 or sch1 != 0, if true
+Step 8.1.1Set totalswing = totalswing + |sch1[i]-sch1[i+1|
+Step 8.2 Increment i by 1
+Step 9 Print sch1 is same order as execution order
+Step 10 Print totalswing
+Step 11 Return
+
+
+
+
+
+
+
+
+
+
+
+
+ 
